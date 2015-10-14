@@ -6,7 +6,7 @@ $(document).ready(function() {
 		var emailPost = email.val(); 
 		var telefone = $("#telefone");
 		var telefonePost = telefone.val(); 	
-		$.post("http://brasilbikerun.com.br/app/enviar.php", {nome: nomePost, email: emailPost, telefone: telefonePost},
+		$.post("brasilbikerun.com.br/app/enviar.php", {nome: nomePost, email: emailPost, telefone: telefonePost},
 		function(data){
 		 $("#resposta").html(data);
 		 }
